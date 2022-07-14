@@ -36,8 +36,12 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
 # 5: Setup Nodejs
 - [ ] add [nvm](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nvm) to oh-my-zsh plugins
     * `plugins=(git nvm)`
-- [ ] make sure to enable lazy load for better shell startup time.
+- [ ] make sure to enable lazy load for better shell startup time (near top of ~/.zshrc).
     * `export NVM_LAZY=1`
+- [ ] install a Nodejs version
+    * `nvm install --lts`
+- [ ] upgrade npm version (if desired)
+    * `npm install -g npm@latest`
 
 # 6: Setup brew
 - [ ] [Download](https://brew.sh/) and run installer.
@@ -61,6 +65,14 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
    ```
 
 # 8: Setup AWS CLI
+- [ ] [Download](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and run installer
+    ```
+    # all system users
+    curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+    sudo installer -pkg AWSCLIV2.pkg -target /
+    ```
+- [ ] configure profile credentials
+    * `aws configure --profile PROFILE_NAME`
 - [ ] add [aws](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aws) to oh-my-zsh plugins
     * `plugins=(git nvm aws)`
 - [ ] [Download](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) and run installers, or simply:
@@ -69,3 +81,7 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
     brew install aws-sam-cli
     sam --version
     ```
+
+# 9: Setup Pulumi
+- [ ] run [install](https://www.pulumi.com/docs/get-started/aws/begin/) command
+    * `brew install pulumi/tap/pulumi`
