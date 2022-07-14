@@ -14,7 +14,7 @@ Things you do when you get a new computer.
     2. [ ] [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
     3. [ ] [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
     4. [ ] [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-
+    5. [ ] [AWS CLI Configure](https://marketplace.visualstudio.com/items?itemName=mark-tucker.aws-cli-configure)
 
 # 3: Setup SSH access to Github
 Follow [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh), making sure to:
