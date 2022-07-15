@@ -82,6 +82,9 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
     sam --version
     ```
 
-# 9: Setup Pulumi
+# 9: Setup jq
+- [ ] `brew install jq`
+
+# 10: Setup Pulumi
 - [ ] run [install](https://www.pulumi.com/docs/get-started/aws/begin/) command
     * `brew install pulumi/tap/pulumi`
