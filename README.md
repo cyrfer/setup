@@ -88,3 +88,7 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
 # 10: Setup Pulumi
 - [ ] run [install](https://www.pulumi.com/docs/get-started/aws/begin/) command
     * `brew install pulumi/tap/pulumi`
+
+# 11: Setup Docker
+- [ ] [Download](https://www.docker.com/get-started/) and run installer.
+
