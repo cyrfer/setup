@@ -29,11 +29,16 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
 - [ ] Follow [install instructions](https://ohmyz.sh/#install)
 - [ ] Pick a theme that shows your current git branch
     * default works `ZSH_THEME="robbyrussell"`
-- [ ] Make sure `git` plugin is listed
-    * open via `code ~/.zshrc`
-    * `plugins=(git)`
 
 # 5: Setup Nodejs
+- [ ] [Download](https://github.com/nvm-sh/nvm#install--update-script) and install nvm
+- [ ] Comment out code added to the bottom of [.zshrc](~/.zshrc)
+    ```bash
+    # commented to allow zsh plugins to manage
+    # export NVM_DIR="$HOME/.nvm"
+    # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+    ```
 - [ ] add [nvm](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nvm) to oh-my-zsh plugins
     * `plugins=(git nvm)`
 - [ ] make sure to enable lazy load for better shell startup time (near top of ~/.zshrc).
@@ -44,13 +49,26 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
     * `npm install -g npm@latest`
 
 # 6: Setup brew
-- [ ] [Download](https://brew.sh/) and run installer.
+- [ ] [Download](https://brew.sh/) and run Brew installer.
+- [ ] follow prompts
+    ```bash
+    ==> Next steps:
+    - Run these two commands in your terminal to add Homebrew to your PATH:
+        echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/johngrant/.zprofile
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+    ```
 
 # 7: Setup git
+- [ ] make sure Mac Command Line Tools are installed by running `git --version`
+  - [ ] if CLT not installed, install them.
+- [ ] make sure `git` is listed as one of the plugins in [.zshrc](~/.zshrc)
+    * `plugins=(git ...)`
 - [ ] use brew to update git
    ```
    git --version
+   which git
    brew install git
+   which git
    git --version
    ```
 - [ ] configure global default profile
@@ -65,7 +83,7 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
    ```
 
 # 8: Setup AWS CLI
-- [ ] [Download](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and run installer
+- [ ] [Download](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and run installer for AWS CLI
     ```
     # all system users
     curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
@@ -75,7 +93,7 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
     * `aws configure --profile PROFILE_NAME`
 - [ ] add [aws](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aws) to oh-my-zsh plugins
     * `plugins=(git nvm aws)`
-- [ ] [Download](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) and run installers, or simply:
+- [ ] [Download](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) and run installers for SAM CLI, or simply:
     ```
     brew tap aws/tap
     brew install aws-sam-cli
