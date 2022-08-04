@@ -89,8 +89,6 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
     curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
     sudo installer -pkg AWSCLIV2.pkg -target /
     ```
-- [ ] configure profile credentials
-    * `aws configure --profile PROFILE_NAME`
 - [ ] add [aws](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aws) to oh-my-zsh plugins
     * `plugins=(git nvm aws)`
 - [ ] [Download](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) and run installers for SAM CLI, or simply:
@@ -99,13 +97,20 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
     brew install aws-sam-cli
     sam --version
     ```
+- [ ] Obtain your employer's AWS SSO URL.
+- [ ] Follow [instructions](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html#sso-configure-profile-auto) to configure profile credentials.
+    * `aws configure sso`
 
 # 9: Setup jq
 - [ ] `brew install jq`
 
-# 10: Setup Pulumi
-- [ ] run [install](https://www.pulumi.com/docs/get-started/aws/begin/) command
-    * `brew install pulumi/tap/pulumi`
+# 10: Setup Hashicorp's tools
+- [ ] run [install](https://www.terraform.io/downloads) command
+    ```bash
+    brew tap hashicorp/tap
+    brew install hashicorp/tap/terraform
+    npm install --global cdktf-cli@latest
+    ```
 
 # 11: Setup Docker
 - [ ] [Download](https://www.docker.com/get-started/) and run installer.
