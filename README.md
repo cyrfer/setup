@@ -10,11 +10,13 @@ Things you do when you get a new computer.
 - [ ] CMD+Shift+P -> `Shell Command: Install 'code' command in PATH`
 - [ ] Enable `Auto Save` (File -> Auto Save)
 - Install extensions:
+    - [ ] [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
     - [ ] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
     - [ ] [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
     - [ ] [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
     - [ ] [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
     - [ ] [AWS CLI Configure](https://marketplace.visualstudio.com/items?itemName=mark-tucker.aws-cli-configure)
+    - [ ] [glTF Tools](https://marketplace.visualstudio.com/items?itemName=cesium.gltf-vscode)
 
 # 3: Setup SSH access to Github
 Follow [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh), making sure to:
