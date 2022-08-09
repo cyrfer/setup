@@ -118,3 +118,8 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
 # 11: Setup Docker
 - [ ] [Download](https://www.docker.com/get-started/) and run installer.
 
+# 12: Setup Android Development Tools
+- [ ] [Download and install Android Studio](https://developer.android.com/studio)
+- [ ] Follow insane procedure to [setup ARM image for emulators](https://stackoverflow.com/questions/64907154/android-studio-emulator-on-macos-with-arm-cpu-m1)
+- [ ] select a device that supports the play store
+
