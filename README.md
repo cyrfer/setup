@@ -16,6 +16,7 @@ Things you do when you get a new computer.
     - [ ] [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
     - [ ] [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
     - [ ] [AWS CLI Configure](https://marketplace.visualstudio.com/items?itemName=mark-tucker.aws-cli-configure)
+    - [ ] [Expo Tools](https://marketplace.visualstudio.com/items?itemName=byCedric.vscode-expo)
     - [ ] [glTF Tools](https://marketplace.visualstudio.com/items?itemName=cesium.gltf-vscode)
 
 # 3: Setup SSH access to Github
