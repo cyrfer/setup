@@ -85,6 +85,21 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
    git config --local user.name "Your Name"
    git config --local user.email "Your@email"
    ```
+- [ ] setup [VSCode as the default git tool](https://www.roboleary.net/vscode/2020/09/15/vscode-git.html)
+  - execute `git config --global -e`
+  - paste the following into the editor and save
+  ```
+    [core]
+        editor = code --wait
+    [diff]
+        tool = vscode
+    [difftool "vscode"]
+        cmd = code --wait --diff $LOCAL $REMOTE
+    [merge]
+        tool = vscode
+    [mergetool "vscode"]
+        cmd = code --wait $MERGED
+  ```
 
 # 8: Setup AWS CLI
 - [ ] [Download](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and run installer for AWS CLI
