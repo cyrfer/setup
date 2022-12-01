@@ -46,7 +46,7 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
 - [ ] add [nvm](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nvm) to oh-my-zsh plugins
     * `plugins=(git nvm)`
 - [ ] make sure to enable lazy load for better shell startup time (near top of ~/.zshrc).
-    * `export NVM_LAZY=1`
+    * `zstyle ':omz:plugins:nvm' lazy true`
 - [ ] install a Nodejs version
     * `nvm install --lts`
 - [ ] upgrade npm version (if desired)
@@ -138,4 +138,8 @@ Follow [instructions](https://docs.github.com/en/authentication/connecting-to-gi
 - [ ] [Download and install Android Studio](https://developer.android.com/studio)
 - [ ] Follow insane procedure to [setup ARM image for emulators](https://stackoverflow.com/questions/64907154/android-studio-emulator-on-macos-with-arm-cpu-m1)
 - [ ] select a device that supports the play store
+
+# 13: Setup Act (Github Action emulator)
+- [ ] `brew install act`
+- [ ] `echo "--container-architecture linux/amd64" >> ~/.actrc`
 
