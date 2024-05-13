@@ -18,6 +18,7 @@ Things you do when you get a new computer.
     - [ ] [AWS CLI Configure](https://marketplace.visualstudio.com/items?itemName=mark-tucker.aws-cli-configure)
     - [ ] [Expo Tools](https://marketplace.visualstudio.com/items?itemName=byCedric.vscode-expo)
     - [ ] [glTF Tools](https://marketplace.visualstudio.com/items?itemName=cesium.gltf-vscode)
+    - [ ] [glsl-canvas](https://marketplace.visualstudio.com/items?itemName=circledev.glsl-canvas)
     - [ ] [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 # 3: Setup SSH access to Github
